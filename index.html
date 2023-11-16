@@ -29,8 +29,14 @@
             var v8=document.getElementById("i8").value;
             var c8=document.getElementById("c8").value;
             v8=v8*c8;
-            let tc=parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8);
-            var cgpa=parseFloat(v1)+parseFloat(v2)+parseFloat(v3)+parseFloat(v4)+parseFloat(v5)+parseFloat(v6)+parseFloat(v7)+parseFloat(v8);
+           var v9=document.getElementById("i9").value;
+            var c9=document.getElementById("c9").value;
+            v9=v9*c9;
+            var v10=document.getElementById("i10").value;
+            var c10=document.getElementById("c10").value;
+            v10=v10*c10;
+            let tc=parseFloat(c1)+parseFloat(c2)+parseFloat(c3)+parseFloat(c4)+parseFloat(c5)+parseFloat(c6)+parseFloat(c7)+parseFloat(c8)+parseFloat(c9)+parseFloat(c10);
+            var cgpa=parseFloat(v1)+parseFloat(v2)+parseFloat(v3)+parseFloat(v4)+parseFloat(v5)+parseFloat(v6)+parseFloat(v7)+parseFloat(v8)+parseFloat(v9)+parseFloat(v10);
                 document.getElementById("a1").innerHTML=parseFloat(cgpa/tc);
         }
     </script>
@@ -123,6 +129,8 @@
         <input type="number" Id="i6" placeholder="subject6 gp"><input type="number" Id="c6" placeholder="credits"><br>
         <input type="number" Id="i7" placeholder="lab1"><input type="number" Id="c7" placeholder="credits"><br>
         <input type="number" Id="i8" placeholder="lab2"><input type="number" Id="c8" placeholder="credits"><br>
+        <input type="number" Id="i9" placeholder="lab3"><input type="number" Id="c9" placeholder="credits"><br>
+        <input type="number" Id="i10" placeholder="Internship"><input type="number" Id="c10" placeholder="credits"><br>
         <p Id="a1"></p><br>
         <button type="button" onclick="mycgpa()">CLICK</button><br><br><hr>
         <hr>
